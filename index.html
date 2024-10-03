@@ -25,7 +25,6 @@
      <a-assets>
       <img id="my-image" src="image.jpg">
     </a-assets>
-
       <a-marker
         type="pattern"
         url="pattern_eaca.patt"
@@ -33,10 +32,9 @@
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
-      >
-        <a-image src="#my-image" rotation="-90 0 0" sound="src: url(sound.mp3); autoplay: true; loop" false;">
-        </a-image>
-      </a-marker>
+       >
+      <a-sound src="url(sound.mp3)" autoplay="true"></a-sound>
+</a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
